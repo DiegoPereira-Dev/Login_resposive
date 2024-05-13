@@ -39,12 +39,12 @@ body {
 
 .container a {
     color: #333;
-    font-size:  13px;
+    font-size: 13px;
     text-decoration: none;
-    margin: 15px 0  10px;
+    margin: 15px 0 10px;
 }
 
-.container button{
+.container button {
     background-color: #512da8;
     color: #fff;
     font-size: 12px;
@@ -59,11 +59,11 @@ body {
 }
 
 .container button.hidden {
-    background-color:transparent ;
+    background-color: transparent;
     border-color: #fff;
 }
 
-.container form{
+.container form {
     background-color: #fff;
     display: flex;
     align-items: center;
@@ -73,7 +73,7 @@ body {
     height: 100%;
 }
 
-.container input{
+.container input {
     background-color: #eee;
     border: none;
     margin: 8px 0;
@@ -84,14 +84,14 @@ body {
     outline: none;
 }
 
-.form-container{
+.form-container {
     position: absolute;
     top: 0;
     height: 100%;
-    transition: all 0.6s ease-in-out ;
+    transition: all 0.6s ease-in-out;
 }
 
-.sign-in{
+.sign-in {
     left: 0;
     width: 50%;
     z-index: 2;
@@ -99,16 +99,16 @@ body {
 
 .container.active .sign-in {
     transform: translateX(100%);
-} 
+}
 
-.sign-up{
+.sign-up {
     left: 0;
     width: 50%;
     opacity: 0;
     z-index: 1;
 }
 
-.container.active .sign-up{
+.container.active .sign-up {
     transform: translateX(100%);
     opacity: 1;
     z-index: 5;
@@ -116,19 +116,24 @@ body {
 }
 
 @keyframes move {
-   0%, 49.99% {
-    opacity: 0;
-    z-index: 1;
-   } 
-   50%, 100%{
-    opacity: 1;
-    z-index: 5;
-   }
+
+    0%,
+    49.99% {
+        opacity: 0;
+        z-index: 1;
+    }
+
+    50%,
+    100% {
+        opacity: 1;
+        z-index: 5;
+    }
 }
 
-.social-icons{
+.social-icons {
     margin: 20px 0;
 }
+
 .icon {
     text-decoration: none;
     width: 5.625rem;
@@ -141,18 +146,19 @@ body {
     overflow: hidden;
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
-      rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+        rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
-.icon > i {
+.icon>i {
     color: #000;
     font-size: 0.8rem;
     transition: all 0.2s;
 }
-.icon:hover > i {
+
+.icon:hover>i {
     scale: 1.2;
     color: #f1f1f1;
-  }
+}
 
 .icon:before {
     background: var(--color);
@@ -169,10 +175,10 @@ body {
 .icon:hover:before {
     animation: slide 0.7s forwards;
 }
-  
+
 .social-icons a {
     border: 1px solid #ccc;
-    border-radius:20% ;
+    border-radius: 20%;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -200,10 +206,10 @@ body {
 
 }
 
-.toggle{
+.toggle {
     background-color: #512da8;
     height: 100%;
-    background: linear-gradient(to right, #5c6bc0,#512da8);
+    background: linear-gradient(to right, #5c6bc0, #512da8);
     color: #fff;
     position: relative;
     left: -100%;
@@ -211,15 +217,15 @@ body {
     width: 200%;
     transform: translateX(0);
     transition: all 0.6s ease-in-out;
-   
+
 }
 
 .container.active .toggle {
     transform: translateX(50%);
-    
+
 }
 
-.toggle-painel{
+.toggle-painel {
     position: absolute;
     width: 50%;
     height: 100%;
@@ -227,13 +233,14 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding:  0 30px;
+    padding: 0 30px;
     text-align: center;
     top: 0;
     transform: translateX(0);
     transition: all 0.6s ease-in-out;
 }
-.toggle-left{
+
+.toggle-left {
     transform: translateX(-200%);
 
 }
@@ -242,7 +249,7 @@ body {
     transform: translateX(0);
 }
 
-.toggle-right{
+.toggle-right {
     right: 0;
     transform: translateX(0);
 }
@@ -252,13 +259,13 @@ body {
 }
 
 
-@keyframes slide{
-    50%{
+@keyframes slide {
+    50% {
         left: 10%;
         top: -40%;
     }
 
-    100%{
+    100% {
         left: -15%;
         top: -15%;
     }
@@ -267,16 +274,20 @@ body {
 
 .icon:has(.fa-instagram) {
     --color: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
-  }
-  .icon:has(.fa-facebook-f) {
+}
+
+.icon:has(.fa-facebook-f) {
     --color: #0077b5;
-  }
-  .icon:has(.fa-google-plus-g) {
+}
+
+.icon:has(.fa-google-plus-g) {
     --color: #ff0000;
-  }
-  .icon:has(.fa-linkedin-in) {
+}
+
+.icon:has(.fa-linkedin-in) {
     --color: #1da1f2;
-  }
-  .icon:has(.fa-github) {
+}
+
+.icon:has(.fa-github) {
     --color: #333;
-  }
+}
